@@ -44,8 +44,8 @@ public class Calculator : MonoBehaviour
     public void ToggleSelected(Yoggle toggle)
     {
         convertTo = toggle.toConvert;
-        if (toggle.Toggled())
-            convertTo = ConvertTo.None;
+        //if (toggle.Toggled())
+        //    convertTo = ConvertTo.None;
     }
     public void CalculateMoney()
     {
@@ -75,7 +75,7 @@ public class Calculator : MonoBehaviour
     public void Clear()
     {
         FindObjectOfType<Toggle>().isOn = true;
-        FindObjectOfType<Yoggle>().Toggled();
+        //FindObjectOfType<Yoggle>().Toggled();
         resultField.text = "";
         inputField.text = "";
     }
